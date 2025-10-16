@@ -22,7 +22,7 @@ Parameters:
 
   AMIId:
     Type: AWS::EC2::Image::Id
-    Default: ami-12345
+    Default: ami-029c5475368ac7adc
     Description: The AMI ID to use.
 
 Resources:
@@ -39,12 +39,12 @@ Resources:
     Type: AWS::EC2::SecurityGroup
     Properties:
       GroupDescription: Allow SSH access
-      VpcId: vpc-0abcd1234efgh5678
+      VpcId: vpc-0295ba6c80998fff4
       SecurityGroupIngress:
         - IpProtocol: tcp
           FromPort: 22
           ToPort: 22
-          CidrIp: 300.0.0.0/0
+          CidrIp: 0.0.0.0/0
 
 Outputs:
   InstanceId:
