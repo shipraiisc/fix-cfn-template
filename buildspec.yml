@@ -23,7 +23,7 @@ phases:
 
   pre_build:
     commands:
-      - echo "Checking AWS CLI version..."
+      - echo "Checking AWS CLI version.."
       - aws --version
       - echo "Validating CloudFormation template..."
       - aws cloudformation validate-template --template-body file://${TEMPLATE_FILE}
